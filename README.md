@@ -2,7 +2,7 @@
 
 **Getting started**
 
-First you'll need to add a `.env` file to the root of your project consisting of:
+First you'll need to add a `.env` file to the root of your ject consisting of:
 
 ```
 GATSBY_SHOP_NAME=
