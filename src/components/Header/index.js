@@ -6,10 +6,15 @@ import { Search } from '../Search';
 import { Link } from 'gatsby';
 
 export function Header() {
+  const LinkStyles = {
+    color: 'black',
+    fontWeight: "normal",
+    textDecoration:"none"
+  } 
   return (
     <HeaderWrapper>
       <div>
-        <Link to="/">
+        <Link to="/" style={LinkStyles}>
           <Logo />
         </Link>
       </div>

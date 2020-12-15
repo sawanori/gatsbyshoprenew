@@ -12,6 +12,7 @@ export function HomepageCollectionsGrid({ collections }) {
 
   return (
     <div>
+      aaa
       {!!saleCollection && (
         <CollectionTile
           sale
@@ -23,19 +24,6 @@ export function HomepageCollectionsGrid({ collections }) {
           backgroundImage={saleCollection.image.localFile.childImageSharp.fluid}
         />
       )}
-      <RemainingCollections>
-        {remainingCollections.map(collection => (
-          <CollectionTile
-            destination={`/all-products?c=${encodeURIComponent(
-              collection.shopifyId
-            )}`}
-            title={collection.title}
-            description={collection.description}
-            backgroundImage={collection.image.localFile.childImageSharp.fluid}
-            key={collection.shopifyId}
-          />
-        ))}
-      </RemainingCollections>
     </div>
   );
 }

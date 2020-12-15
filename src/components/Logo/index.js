@@ -1,5 +1,6 @@
 import React from 'react';
 import Img from 'gatsby-image';
+import {LogoText} from './styles'
 import { useStaticQuery, graphql } from 'gatsby';
 
 export function Logo() {
@@ -14,5 +15,9 @@ export function Logo() {
       }
     }
   `);
-  return <Img fixed={data.file.childImageSharp.fixed} />;
+  return(
+    <>
+     <LogoText>どやじ </LogoText>
+    </>
+  )
 }
