@@ -15,7 +15,7 @@ export function CartContents() {
 
   return (
     <section>
-      <h1>カート</h1>
+      <h1>〜カート〜</h1>
       {!!checkout?.lineItems && (
         <CartHeader>
           <div>商品</div>
